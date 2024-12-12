@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>send cookie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            color: #333;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #statusMessage {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .error {
+            background-color: #ffdddd;
+            color: #d8000c;
+            border: 1px solid #d8000c;
+        }
+        .success {
+            background-color: #ddffdd;
+            color: #4f8a10;
+            border: 1px solid #4f8a10;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Send Custom Messages to Discord</h1>
+    <form id="sendMessageForm">
+        <textarea id="userMessage" placeholder="Type your message here..." rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Send</button>
+    </form>
+    
+    <div id="statusMessage"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
